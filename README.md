@@ -1,1 +1,1 @@
-# IntrotoIM
+# Intro to IM
