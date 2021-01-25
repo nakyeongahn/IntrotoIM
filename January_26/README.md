@@ -8,4 +8,5 @@ I had some difficulties finding the right angle to rotate the shape that I drew 
 ### What I enjoyed ###
 It was interesting to make a self-portrait through processing since I could make a actual drawing of myself using the basic shapes such as rectangle, ellipse, circle, and triangle. It was also satisfying to show my preferences.
 
+### Result ###
 ![Image of Self Portrait](https://github.com/nakyeongahn/IntrotoIM/blob/main/January_26/self_portrait.png)
