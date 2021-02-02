@@ -5,7 +5,7 @@
 ### Difficulties ###
 
 
-### What I enjoyed making self-portrait ###
+### What I enjoyed creating this ###
 
 
 ### Result ###
