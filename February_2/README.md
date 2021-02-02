@@ -9,5 +9,5 @@ The big pink circle follows your mouse while other little circles are randomly m
 
 ### Result ###
 <p align="center">
-<img src="na2450_Week2_Assignment.gif" width="800" height="800">
+<img src="na2450_Week2_Assignment.gif" width="700" height="700">
 </p>
