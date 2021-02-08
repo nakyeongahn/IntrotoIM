@@ -44,7 +44,13 @@ I used the keyPressed() and keyReleased() function to move the character and I r
 I wanted to make a pot or circle that shows the score dynamically by showing how full is the pot. However, there was no enough time to realize this part. I also want to make the food falling animation more sophisticated. Now, the food may have same x coordinates and collide to each other. However, I wanted to avoid this as well.
 
 #### Result ####
+The character can move to left, right, and jump. When it touches the food, the percentage for hunger goes down by 5%.
 <p align="center">
-<img src="img/animation.gif" width="750" height="750">
+<img src="img/animation.gif" width="800" height="600">
+</p>
+
+When the percentage for hunger reaches 0%, the character cannot move anymore. The key for moving no longer works but the food is still falling.
+<p align="center">
+<img src="img/animation2.gif" width="800" height="600">
 </p>
 
