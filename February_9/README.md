@@ -6,11 +6,12 @@ I created a little game where the main character eats food falling from the sky.
 </p>
 
 #### Process ####
-* I first drew the background with my ipad. I tried to describe sky, trees, and the ground by using various watercolors. I felt that this can give more simplicity in the background than drawing the actual elements *
+* I first drew the background with my ipad. I tried to describe sky, trees, and the ground by using various watercolors. I felt that this can give more simplicity in the background than drawing the actual elements.
 <p align="center">
   <img src="img/background.png" width="500" height="300">
 </p>
-* Then I constructed a class for food and made an array of classes for food. I collected the image for korean food and then processed to remove the background and set the pixel size. *
+
+* Then I constructed a class for food and made an array of classes for food. I collected the image for korean food and then processed to remove the background and set the pixel size. The class for food has various functions including display(), move(), eatFood(), collision(), and etc.
 <p float="left" align="center">
   <img src="img/food1.png" width="100" height="100">
   <img src="img/food2.png" width="100" height="100">
@@ -21,6 +22,10 @@ I created a little game where the main character eats food falling from the sky.
   <img src="img/food7.png" width="100" height="100">
 </p>
 
+* Then I constructed a class for the character. I collected the image for korean food and then processed to remove the background. The class for character has various functions including display(), move(), and etc.
+<p align="center">
+  <img src="img/character.png" width="230" height="340">
+</p>
 
 #### Code ####
 * I used object oriented programming(OOP) using two classes, one for main circle and one for small circles, and functions.
