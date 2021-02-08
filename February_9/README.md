@@ -11,8 +11,16 @@ I created a little game where the main character eats food falling from the sky.
   <img src="img/background.png" width="500" height="300">
 </p>
 * Then I constructed a class for food and made an array of classes for food. I collected the image for korean food and then processed to remove the background and set the pixel size. *
-<img src="img/food1.png" width="100" height="100">
-<img src="img/food2.png" width="100" height="100">
+<p float="left" align="center">
+  <img src="img/food1.png" width="100" height="100">
+  <img src="img/food2.png" width="100" height="100">
+  <img src="img/food3.png" width="100" height="100">
+  <img src="img/food4.png" width="100" height="100">
+  <img src="img/food5.png" width="100" height="100">
+  <img src="img/food6.png" width="100" height="100">
+  <img src="img/food7.png" width="100" height="100">
+</p>
+
 
 #### Code ####
 * I used object oriented programming(OOP) using two classes, one for main circle and one for small circles, and functions.
