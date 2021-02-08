@@ -1,8 +1,18 @@
 # Food Falling from the Sky
 I created a little game where the main character eats food falling from the sky. I got this idea from the movie "Cloudy with a Chance of Meatball," which I enjoyed watching in my childhood. I added my personal taste of food and changed some elements that come out in the movie. I miss Korean food a lot these days, and since lunar new year is this friday, I decided to choose Korean food and a character wearing Hanbok, Korean traditional clothes. 
+<p align="center">
+  Poster of "Cloudy with a Chance of Meatball": <br>
+  <img src="img/movie.jpg" width="500" height="500">
+</p>
 
-Poster of "Cloudy with a Chance of Meatball"
-
+#### Process ####
+* I first drew the background with my ipad. I tried to describe sky, trees, and the ground by using various watercolors. I felt that this can give more simplicity in the background than drawing the actual elements *
+<p align="center">
+  <img src="img/background.png" width="500" height="300">
+</p>
+* Then I constructed a class for food and made an array of classes for food. I collected the image for korean food and then processed to remove the background and set the pixel size. *
+<img src="img/food1.png" width="100" height="100">
+<img src="img/food2.png" width="100" height="100">
 
 #### Code ####
 * I used object oriented programming(OOP) using two classes, one for main circle and one for small circles, and functions.
