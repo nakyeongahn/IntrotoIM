@@ -28,21 +28,20 @@ I created a little game where the main character eats food falling from the sky.
 </p>
 
 #### Code ####
-* I used object oriented programming(OOP) using two classes, one for main circle and one for small circles, and functions.
-* I used for loop to generate the coordinates for small circles and when applying functions for each of small circles.
-* The information of small circles were stored in an array of integers, and an array of class for small circles I created.
+* I used object oriented programming(OOP) using two classes, one for main character and one for food, and functions.
+* I used for loop to generate initializing instances for food.
+* keyPressed() and keyReleased() functions are used to control the movement of the main character. She can move to left, right, and upward.
 
 #### Difficulties ####
-* It took some time for me to find out how the loop and animation works in the draw() function. As the draw functions are keep repeated, I had to be careful using loops in functions for other classes. Otherwise, the motion of circles and change in colors would go so fast and looked very unorganized.
-* While I tried to create an array of instaces of the class I created, I found it little difficult to use the syntax. There were some important things to keep in mind to use an array for the class. <br>
-***ClassName[] ArrayName = new ClassName [int];<br>***
-***ArrayName[index]=new ClassName (parameters);<br>***
+* I had hardships where to put the lines for resetting the background. Based on its location, the result was very different. Someimtes it showed only one food among 7 of them, and sometimes the trace of food was visible in the window.
+* When using different conditions, the syntax if very important. WHen the lines that should be under the if condition are not in the bracket, it will lead to a disaster, which may take you a long time to figure out what's wrong.
+* I tried to use the loadFont() function, but I couldn't figure out how it works. Does Processing only support certain types of font file?
 
 #### What I enjoyed creating this ####
-I enjoyed adding the interactive element to this work so that users can control the pathway of circle. I found that there are so many ways to apply one function and it would appear very different depending on how you use it. I loved how setting variables and conditions for variables can make the program more sophisticated and realize what I wanted to describe easily.
+I used the keyPressed() and keyReleased() function to move the character and I really like the result of how it moves! I love how draw() function can make many more sophisticated animation possible.
 
 #### Result ####
 <p align="center">
-<img src="na2450_Week2_Assignment.gif" width="750" height="750">
+<img src="img/animation.gif" width="750" height="750">
 </p>
 
