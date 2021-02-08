@@ -40,6 +40,9 @@ I created a little game where the main character eats food falling from the sky.
 #### What I enjoyed creating this ####
 I used the keyPressed() and keyReleased() function to move the character and I really like the result of how it moves! I love how draw() function can make many more sophisticated animation possible.
 
+#### What I couldn't finish ####
+I wanted to make a pot or circle that shows the score dynamically by showing how full is the pot. However, there was no enough time to realize this part. I also want to make the food falling animation more sophisticated. Now, the food may have same x coordinates and collide to each other. However, I wanted to avoid this as well.
+
 #### Result ####
 <p align="center">
 <img src="img/animation.gif" width="750" height="750">
