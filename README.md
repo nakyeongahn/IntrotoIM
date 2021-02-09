@@ -18,4 +18,9 @@ The big pink circle follows your mouse while other little circles are randomly m
 <img src="February_2/na2450_Week2_Assignment.gif" width="600" height="600">
 </p>
 
-
+#### Week3-February 9: Food Falling from the Sky
+I created a little game where the main character eats food falling from the sky. I got this idea from the movie "Cloudy with a Chance of Meatball," which I enjoyed watching in my childhood. I added my personal taste of food and changed some elements that come out in the movie. I miss Korean food a lot these days, and since lunar new year is this friday, I decided to choose Korean food and a character wearing Hanbok, Korean traditional clothes. 
+[*click to see more details*](https://github.com/nakyeongahn/IntrotoIM/blob/main/February_9/README.md)
+<p align="center">
+  <img src="February_9/img/animation.gif" width="800" height="600">
+</p>
