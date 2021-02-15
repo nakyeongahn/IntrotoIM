@@ -1,9 +1,10 @@
 # Top 50 Google Searches in 2020
-I created a little game where the main character eats food falling from the sky. I got this idea from the movie "Cloudy with a Chance of Meatball," which I enjoyed watching in my childhood. I added my personal taste of food and changed some elements that come out in the movie. I miss Korean food a lot these days, and since lunar new year is this friday, I decided to choose Korean food and a character wearing Hanbok, Korean traditional clothes. 
-<p align="center">
-  Poster of "Cloudy with a Chance of Meatball": <br>
-  <img src="img/movie.jpg" width="500" height="500">
-</p>
+I created a little animation where the 50 keywords that were searched the most on Google in 2020. The most searched word appears first with the biggest size and greatest opacity. As its rank goes down, the size of the text and opacity decreases. 
+
+The top 50 Google searches were found here:
+https://www.semrush.com/blog/most-searched-keywords-google/#header3
+
+I expected to have a lot of keywords related to pandemic and Covid-19. However, most words were the name of social media, weather, and translators in English, Spanish, and Russian. For me, at least, the top 50 searches in 2020 were quite surprising.
 
 #### Process ####
 * I first drew the background with my ipad. I tried to describe sky, trees, and the ground by using various watercolors. I felt that this can give more simplicity in the background than drawing the actual elements.
@@ -44,14 +45,14 @@ I used the keyPressed() and keyReleased() function to move the character and I r
 I wanted to make a pot or circle that shows the score dynamically by showing how full is the pot. However, there was no enough time to realize this part. I also want to make the food falling animation more sophisticated. Now, the food may have same x coordinates and collide to each other. However, I wanted to avoid this as well.
 
 #### Result ####
-The character can move to left, right, and jump. When it touches the food, the percentage for hunger goes down by 5%.
+1st trial:<br>
 <p align="center">
-<img src="February_16(1).gif" width="1200" height="800">
+<img src="February_16(1).gif" width="700" height="400">
 </p>
 
-When the percentage for hunger reaches 0%, the character cannot move anymore. The key for moving no longer works but the food is still falling.
+2nd trial:<br>
 <p align="center">
-<img src="February_16(2).gif" width="1200" height="800">
+<img src="February_16(2).gif" width="700" height="400">
 </p>
 
 
