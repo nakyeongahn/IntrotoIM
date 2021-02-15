@@ -72,15 +72,15 @@ void draw() {
 ```
 
 #### Difficulties ####
-* I had hardships where to put the lines for resetting the background. Based on its location, the result was very different. Someimtes it showed only one food among 7 of them, and sometimes the trace of food was visible in the window.
-* When using different conditions, the syntax if very important. WHen the lines that should be under the if condition are not in the bracket, it will lead to a disaster, which may take you a long time to figure out what's wrong.
-* I tried to use the loadFont() function, but I couldn't figure out how it works. Does Processing only support certain types of font file?
+* The place for assigning variables are imporatant. I realized that the assignments for variables for in the function, it resets every time the draw() calls the function. Therefore, controlling the variables inside the function along with the assignments for variables would be meaningless.
+* To find the coordinates for texts not to go over the size of the window was the one of the hardest job. Since the font size varies for each keyword, it was hard to check whether any keywords would stay in the window.
 
 #### What I enjoyed creating this ####
-I used the keyPressed() and keyReleased() function to move the character and I really like the result of how it moves! I love how draw() function can make many more sophisticated animation possible.
+I used the fourth parameter in the color() for the first time, trying to control the opacity. I really liked the results with various opacities!
+Moreover, it was an interesting process to come up with an efficient way to display the data I have. I am still not sure whether this animation shows the data efficiently as the way I wanted to express. What I intended to to is that the keywords which was searched more than others should be emphasized more in the animation.
 
 #### What I couldn't finish ####
-I wanted to make a pot or circle that shows the score dynamically by showing how full is the pot. However, there was no enough time to realize this part. I also want to make the food falling animation more sophisticated. Now, the food may have same x coordinates and collide to each other. However, I wanted to avoid this as well.
+I really wanted to make the keywords not overlap with each other so that all 50 words are readable. However, I couldn't achieve this part since all the randomness I used in this animation makes this part harder. 
 
 #### Result ####
 1st trial:<br>
