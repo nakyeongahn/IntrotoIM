@@ -6,32 +6,70 @@ https://www.semrush.com/blog/most-searched-keywords-google/#header3
 
 I expected to have a lot of keywords related to pandemic and Covid-19. However, most words were the name of social media, weather, and translators in English, Spanish, and Russian. For me, at least, the top 50 searches in 2020 were quite surprising.
 
-#### Process ####
-* I first drew the background with my ipad. I tried to describe sky, trees, and the ground by using various watercolors. I felt that this can give more simplicity in the background than drawing the actual elements.
+#### Process & Code ####
+* I first made a csv file of top 50 Google searches in 2020. The keywords are separated by ",".
 <p align="center">
-  <img src="img/background.png" width="500" height="300">
+  <img src="csv_img.png" width="500" height="300">
 </p>
 
-* Then I constructed a class for food and made an array of classes for food. I collected the image for korean food and then processed to remove the background and set the pixel size. The class for food has various functions including display(), move(), eatFood(), collision(), and etc.
-<p float="left" align="center">
-  <img src="img/food1.png" width="100" height="100">
-  <img src="img/food2.png" width="100" height="100">
-  <img src="img/food3.png" width="100" height="100">
-  <img src="img/food4.png" width="100" height="100">
-  <img src="img/food5.png" width="100" height="100">
-  <img src="img/food6.png" width="100" height="100">
-  <img src="img/food7.png" width="100" height="100">
-</p>
+* Then I started to work on coding part in Processing. I first loaded the text from a csv file and split the text by ",". The keywords were then stored in an array of strings.
+```
+String strings[]; //array for loading csv file
+String data[]; //store data of texts
 
-* Then I constructed a class for the character. I collected the image for korean food and then processed to remove the background. The class for character has various functions including display(), move(), and etc.
-<p align="center">
-  <img src="img/character.png" width="230" height="340">
-</p>
+void loaddata() { //function to load csv file
+  strings = loadStrings("2020search.csv");
+  data= split(strings[0], ","); //split text into ","
+};
+```
 
-#### Code ####
-* I used object oriented programming(OOP) using two classes, one for main character and one for food, and functions.
-* I used for loop to generate initializing instances for food.
-* keyPressed() and keyReleased() functions are used to control the movement of the main character. She can move to left, right, and upward.
+* After loading the text, I created another function to display the text. Here, I set the font as "DejaVuSans-BoldOblique". The color was chosen randomly, and the size of text keeps decreasing as the rank for keywords goes down.
+
+```
+void display() { //function for display
+  int r=int(random(0, 192));  //choose random colors
+  int g=int(random(0, 192));
+  int b=int(random(0, 192));
+
+  PFont f = createFont("DejaVuSans-BoldOblique", 32); //create fonts
+  textFont(f, fontsize);
+  color textcolor = color(r, g, b, opacity); //create color
+  fill(textcolor);  
+  
+  if (index==0) { //set text align
+    textAlign(CENTER);
+  } else {
+    textAlign(LEFT);
+  }
+  text(data[index], x, y); //write text on the screen
+};
+```
+* In the setup(), frameRate was set as 3.
+
+* By calling these two function inside the draw(), the 50 keywords were displayed. In the draw(), the index for keywords, the x and y position of texts, fontsize, and opacity were controlled.
+
+```
+void draw() {
+  loaddata(); //call function
+  if (index<50) { //there are only 50 words in csv file
+    display(); //display text
+    index++; //increase index
+    fontsize-=1; //control variables for fontsize, opacity
+    opacity-=5;
+    if (index%2==0) { //control x and y coordinates of text, so that it doesn't go out of the window.
+      x+=int(random(50, 500));
+    } else {
+      x-=int(random(50, 300));
+    }
+    if (x<0){x+=200;}
+    if (x>600) {x-=100;}
+    y+=50;
+    if (y>=800){
+      y=400;
+    };
+  };
+};
+```
 
 #### Difficulties ####
 * I had hardships where to put the lines for resetting the background. Based on its location, the result was very different. Someimtes it showed only one food among 7 of them, and sometimes the trace of food was visible in the window.
