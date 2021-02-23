@@ -42,11 +42,11 @@ The Instruction screen I created (using Powerpoint to insert the text):
 ##### Images for Moles #####
 The images of moles I created (using Procreate on ipad):
 <p align="center">
-  <img src="img/mole1.png" width="150" height="150">
-  <img src="img/mole2.png" width="150" height="150">
-  <img src="img/mole3.png" width="150" height="150">
-  <img src="img/mole4.png" width="150" height="150">
-  <img src="img/mole5.png" width="150" height="150">
+  <img src="img/mole1.png" width="100" height="150">
+  <img src="img/mole2.png" width="100" height="150">
+  <img src="img/mole3.png" width="100" height="150">
+  <img src="img/mole4.png" width="100" height="150">
+  <img src="img/mole5.png" width="100" height="150">
 </p>
 
 ### February 21, 2021 : Display Images and Create Buttons ###
@@ -88,6 +88,42 @@ void start_display() {
 };
 ```
 This is how the button works:
+<p align="center">
+  <img src="btn.gif" width="500" height="500">
+</p>
+
+### February 22, 2021 : Create Classes for Moles and Display Moles ###
+After the user clicks the start button, the screen changes to the game screen. I first created a function called createMoles() in order to create an array of class for moles and assign its position using for loop.
+```
+Mole[] moles = new Mole[9];
+void createMoles(Mole[] array) {
+  int x_pos=200; 
+  int y_pos=200;
+
+  for (int i=0; i<9; i++) {
+    array[i]=new Mole(x_pos, y_pos, i);
+    if (i%3!=2) {
+      x_pos+=200;
+    } else {
+      y_pos+=200;
+      x_pos=200;
+    }
+  };
+};
+```
+I also created a class of moles called "Mole." The class Mole has various attributes including coordinates of the mole, index (numbering), coordinates of its hole, boolean variable for its visibility, etc.
+```
+  int hole_x, hole_y, hole_cnt;
+  PImage img_mole;
+  String img_nm;
+  int mole_num;
+  int visible=int(random(2));
+  int mole_x, mole_y;
+  int time_cnt=int(random(1,6));
+  ```
+ Under the class Moles, I made a function to display hole. It simply draws the ellipse on the coordinates stored by the variable hole_x and hole_y.
+ This is the result:
+ This is how the button works:
 <p align="center">
   <img src="btn.gif" width="500" height="500">
 </p>
