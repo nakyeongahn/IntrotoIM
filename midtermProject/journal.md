@@ -117,7 +117,6 @@ I also created a class of moles called "Mole." The class Mole has various attrib
   PImage img_mole;
   String img_nm;
   int mole_num;
-  int visible=int(random(2));
   int mole_x, mole_y;
   int time_cnt=int(random(1,6));
   ```
@@ -126,3 +125,14 @@ I also created a class of moles called "Mole." The class Mole has various attrib
 <p align="center">
   <img src="img/hole.png" width="500" height="500">
 </p>
+
+Then, I created another function to display moles. By picking random number from 1 to 5, it choosed the type of mole randomly. Since all the moles should not appear at the same time, I also randomly assigned the value for boolean variable visiblity. Therefore, the type of the mole, the visibility of the mole is randomly chosen. 
+```
+mole_num=int(random(1, 6));
+img_nm="img/mole"+str(mole_num)+".png";
+img_mole=loadImage(img_nm);
+
+int visible=int(random(2));
+
+int time_cnt=int(random(1,6));
+```
