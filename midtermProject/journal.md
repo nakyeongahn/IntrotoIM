@@ -165,3 +165,7 @@ void mole_update() {
   };
 };
 ```
+ This is the result:
+<p align="center">
+  <img src="mole.gif" width="500" height="500">
+</p>
