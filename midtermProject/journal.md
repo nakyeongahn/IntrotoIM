@@ -14,7 +14,7 @@ I plant to make a game "Whack-a-mole," where moles randomly pop up in the screen
 I looked up various illustrations and images for whack-a-mole and chose one image that I liked the most. I will refer to this image for desgining the game.
 <p align="center">
   Model Illustration can be found here:
-  https://www.urbanbrush.net
+  https://www.urbanbrush.net<br>
   <img src="img/model.png" width="500" height="500">
 </p>
 
@@ -87,3 +87,7 @@ void start_display() {
   };
 };
 ```
+This is how the button works:
+<p align="center">
+  <img src="btn.gif" width="500" height="500">
+</p>
