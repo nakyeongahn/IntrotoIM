@@ -123,7 +123,6 @@ I also created a class of moles called "Mole." The class Mole has various attrib
   ```
  Under the class Moles, I made a function to display hole. It simply draws the ellipse on the coordinates stored by the variable hole_x and hole_y.
  This is the result:
- This is how the button works:
 <p align="center">
   <img src="img/hole.png" width="500" height="500">
 </p>
