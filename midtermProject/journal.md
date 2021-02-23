@@ -125,5 +125,5 @@ I also created a class of moles called "Mole." The class Mole has various attrib
  This is the result:
  This is how the button works:
 <p align="center">
-  <img src="btn.gif" width="500" height="500">
+  <img src="img/hole.png" width="500" height="500">
 </p>
