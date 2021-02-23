@@ -121,12 +121,22 @@ I also created a class of moles called "Mole." The class Mole has various attrib
   int time_cnt=int(random(1,6));
   ```
  Under the class Moles, I made a function to display hole. It simply draws the ellipse on the coordinates stored by the variable hole_x and hole_y.
+ ```
+ void hole_display() {
+    if (btn_start==true) {
+      stroke(0, 0, 0);
+      strokeWeight(2.5);
+      fill(0, 0, 0, 165);
+      ellipse(hole_x, hole_y, 100, 50);
+    };
+  };
+  ```
  This is the result:
 <p align="center">
   <img src="img/hole.png" width="500" height="500">
 </p>
 
-Then, I created another function to display moles. By picking random number from 1 to 5, it choosed the type of mole randomly. Since all the moles should not appear at the same time, I also randomly assigned the value for boolean variable visiblity. Therefore, the type of the mole, the visibility of the mole is randomly chosen. 
+Then, I created another function to display moles. By picking random number from 1 to 5, it choosed the type of mole randomly. Since all the moles should not appear at the same time, I also randomly assigned the value for boolean variable visiblity. Therefore, the type of the mole, the visibility of the mole is randomly chosen.
 ```
 mole_num=int(random(1, 6));
 img_nm="img/mole"+str(mole_num)+".png";
@@ -134,5 +144,24 @@ img_mole=loadImage(img_nm);
 
 int visible=int(random(2));
 
+void mole_display() {
+  if (visible==1) {
+    image(img_mole, mole_x, mole_y);
+    };
+  };
+
+```
+To make the moles move, I made an mole_update() function where the y-coordinate of mole moves upward. If it reaches an upperlimit, then the function resets all the information for the mole. At first, when I made this function it all had the motion at the same time. To make it more dynamic I added the variable called time_cnt and assignmed the value randomly to make each mole is in diffferent phase of the movement. 
+```
 int time_cnt=int(random(1,6));
+
+void mole_update() {
+    mole_y-=10;
+    time_cnt+=1;
+
+    if (time_cnt>=5) {
+      moles[hole_cnt]=new Mole(hole_x, hole_y, hole_cnt);
+    };
+  };
+};
 ```
