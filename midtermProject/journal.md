@@ -171,4 +171,40 @@ void mole_update() {
 </p>
 
 ### February 24, 2021 : Display Hammer ###
-Now, I tried to display hammer along my mouse. However, to reduce the confusion for the user where to hit the moles, I wanted to display the image of hammer upward to the cursor so that the cursor is placed at the midpoint of bottom line of the hammer image.
+Now, I tried to display hammer along my mouse. However, to reduce the confusion for the user where to hit the moles, I wanted to display the image of hammer upward to the cursor so that the cursor is placed at the midpoint of bottom line of the hammer image. I added the line of function image() to draw hammer. I first constructed a class for hammer; however, the object was lagging and the response to the movements of cursor was slow. So, to reduce the complexity of the code and make it less bulky, I commented out the class for hammer.
+```
+image(img_hm, mouseX-20, mouseY-80, 125, 75);
+```
+<p align="center">
+  <img src="img/hammer_pos.jpg" width="500" height="500">
+</p>
+
+Instead, there is a function called hammer_change(). This function is only called when the score % 20 equals 0 or 5. When the function goes over 20,40,60,80 points, the color of hammer changes by displaying different image file.
+
+```
+void hammer_change() {
+  if (score<20) {
+    img_nm="img/hammer1.png";
+    y_change=2;
+    phase=int(50/y_change);
+  } else if (score<40) {
+    img_nm="img/hammer2.png";
+    y_change=2.4;
+    phase=int(50/y_change);
+  } else if (score<60) {
+    img_nm="img/hammer3.png";
+    y_change=2.8;
+    phase=int(50/y_change);
+  } else if (score<80) {
+    img_nm="img/hammer4.png";
+    y_change=3.2;
+    phase=int(50/y_change);
+  } else if (score<100) {
+    img_nm="img/hammer5.png";
+    y_change=3.6;
+    phase=int(50/y_change);
+  }
+  img_hm=loadImage(img_nm);
+  hit=false;
+};
+```
