@@ -170,7 +170,15 @@ void mole_update() {
   <img src="mole.gif" width="500" height="500">
 </p>
 
-### February 24, 2021 : Display Hammer ###
+### February 25, 2021 : Add Flower ###
+I added a flower image as one type of mole. I increased the range of choosing random number by 1 when constructing a class for mole, so that when initiating the game, it can be randomly chosen whether the hole will be having moles or flowers. I drew the images for a flower using Procreate on iPad.
+
+<p align="center">
+  <img src="img/mole6.png" width="100" height="150">
+</p>
+
+
+### February 25, 2021 : Display Hammer ###
 First, I drew the images for hammer with different colors using Procreate on iPad.
 <p align="center">
   <img src="img/hammer1.png" width="125" height="80">
