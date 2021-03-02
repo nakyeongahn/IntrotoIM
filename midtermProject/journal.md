@@ -187,10 +187,12 @@ First, I drew the images for hammer with different colors using Procreate on iPa
   <img src="img/hammer4.png" width="125" height="80">
   <img src="img/hammer5.png" width="125" height="80">
 </p>
-Now, I tried to display hammer along my mouse. However, to reduce the confusion for the user where to hit the moles, I wanted to display the image of hammer upward to the cursor so that the cursor is placed at the midpoint of bottom line of the hammer image. I added the line of function image() to draw hammer. I first constructed a class for hammer; however, the object was lagging and the response to the movements of cursor was slow. So, to reduce the complexity of the code and make it less bulky, I commented out the class for hammer.
+Now, I tried to display hammer along my mouse. However, to reduce the confusion for the user where to hit the moles, I wanted to display the image of hammer upward to the cursor so that the cursor is placed at the midpoint of bottom line of the hammer image. I added the line of function image() to draw hammer. I first constructed a class for hammer; however, the object was lagging and the response to the movements of cursor was slow. So, to reduce the complexity of the code and make it less bulky, I commented out the class for hammer.<br>
+
 ```
 image(img_hm, mouseX-20, mouseY-80, 125, 75);
 ```
+
 <p align="center">
   <img src="img/hammer_pos.jpg" width="500" height="500">
 </p>
