@@ -235,3 +235,39 @@ This is the result:
 ### February 27, 2021 : Check Collisions ###
 I added the global variable int score and then updated the score whenever the hammer hit the mole. In order to check the range for the collisions I sketched the image again for easier calculations.
 
+<p align="center">
+  <img src="img/collision_pos.png" width="500" height="500">
+</p>
+
+```
+void mole_hit() {
+    int x=mouseX-20; 
+    int y=mouseY-80;
+
+    if (x+45>mole_x && x<mole_x+45 && y+75>mole_y && y<mole_y+88 && mousePressed && visible==1) {
+      hit=true;
+
+      if (score%20==0 || score%20==5) {
+        hammer_change();
+      };
+      start_fc=frameCount;
+      if (mole_num==4) {
+        score+=10;
+        score_change=10;
+
+      } else if (mole_num==6) {
+        score-=10;
+        score_change=-10;
+
+        //text("Don't kill the flower :( -10!", width/2,720);
+      } else {
+        score+=5;
+        score_change=5;
+      }
+      moles[hole_cnt]=new Mole(hole_x, hole_y, hole_cnt);
+    }
+  };
+  ```
+  The function above checks if the collision happened and update the score accordingly.
+  
+  
