@@ -169,3 +169,6 @@ void mole_update() {
 <p align="center">
   <img src="mole.gif" width="500" height="500">
 </p>
+
+### February 24, 2021 : Display Hammer ###
+Now, I tried to display hammer along my mouse. However, to reduce the confusion for the user where to hit the moles, I wanted to display the image of hammer upward to the cursor so that the cursor is placed at the midpoint of bottom line of the hammer image.
