@@ -170,7 +170,7 @@ void mole_update() {
   <img src="mole.gif" width="500" height="500">
 </p>
 
-### February 25, 2021 : Add Flower ###
+### February 24, 2021 : Add Flower ###
 I added a flower image as one type of mole. I increased the range of choosing random number by 1 when constructing a class for mole, so that when initiating the game, it can be randomly chosen whether the hole will be having moles or flowers. I drew the images for a flower using Procreate on iPad.
 
 <p align="center">
@@ -231,3 +231,7 @@ This is the result:
 <p align="center">
   <img src="hammer.gif" width="500" height="500">
 </p>
+
+### February 27, 2021 : Check Collisions ###
+I added the global variable int score and then updated the score whenever the hammer hit the mole. In order to check the range for the collisions I sketched the image again for easier calculations.
+
