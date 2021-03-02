@@ -203,24 +203,14 @@ Instead, there is a function called hammer_change(). This function is only calle
 void hammer_change() {
   if (score<20) {
     img_nm="img/hammer1.png";
-    y_change=2;
-    phase=int(50/y_change);
   } else if (score<40) {
     img_nm="img/hammer2.png";
-    y_change=2.4;
-    phase=int(50/y_change);
   } else if (score<60) {
     img_nm="img/hammer3.png";
-    y_change=2.8;
-    phase=int(50/y_change);
   } else if (score<80) {
     img_nm="img/hammer4.png";
-    y_change=3.2;
-    phase=int(50/y_change);
   } else if (score<100) {
     img_nm="img/hammer5.png";
-    y_change=3.6;
-    phase=int(50/y_change);
   }
   img_hm=loadImage(img_nm);
   hit=false;
@@ -270,4 +260,9 @@ void mole_hit() {
   ```
   The function above checks if the collision happened and update the score accordingly.
   
-  
+### March 1, 2021 : Change the Speed of the Game ###
+In order to change the speed of the game, the speed of mole moving should be faster. Therefore when the hammer changes or when the score reaches every 20 points, the y_change variable increases by 0.4. It means that the speed of the mole moving along the y_coordinate will increase. When I increased the y_change, I faced another obstacle. Since the mole is moving upward for greater distance, the total distance it moves upward at the end of the phase got bigger as well. To control this, I set the phase of the movement equals the total y_distance it moves divided by the speed of the mole.
+```
+y_change+=0.4;
+phase=int(50/y_change);
+```
