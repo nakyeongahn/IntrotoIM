@@ -236,7 +236,7 @@ This is the result:
 I added the global variable int score and then updated the score whenever the hammer hit the mole. In order to check the range for the collisions I sketched the image again for easier calculations.
 
 <p align="center">
-  <img src="img/collision_pos.png" width="500" height="500">
+  <img src="img/collision_pos.jpg" width="500" height="500">
 </p>
 
 ```
