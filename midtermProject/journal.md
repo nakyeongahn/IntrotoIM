@@ -224,3 +224,8 @@ void hammer_change() {
   hit=false;
 };
 ```
+
+This is the result:
+<p align="center">
+  <img src="hammer.gif" width="500" height="500">
+</p>
