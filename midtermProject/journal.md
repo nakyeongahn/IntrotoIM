@@ -260,9 +260,34 @@ void mole_hit() {
   ```
   The function above checks if the collision happened and update the score accordingly.
   
-### March 1, 2021 : Change the Speed of the Game ###
+### February 28, 2021 : Change the Speed of the Game ###
 In order to change the speed of the game, the speed of mole moving should be faster. Therefore when the hammer changes or when the score reaches every 20 points, the y_change variable increases by 0.4. It means that the speed of the mole moving along the y_coordinate will increase. When I increased the y_change, I faced another obstacle. Since the mole is moving upward for greater distance, the total distance it moves upward at the end of the phase got bigger as well. To control this, I set the phase of the movement equals the total y_distance it moves divided by the speed of the mole.
 ```
 y_change+=0.4;
 phase=int(50/y_change);
+```
+### March 1, 2021 : Display Notifications ###
+I wanted to display notifications as the user hits the mole or flower with the hammer. What I did at first was to display text when checking the collisions. However, the text would disappear so quickly after 1 frame when the screen is redrawn. Therefore I used the frameCount to count the certain time period and display the text until for the certain period of time. When the collision happens, I store the frameCount when collision happened in a variable.
+```
+start_fc=frameCount;
+```
+Then, I built another void function called notification() to display the text until 7 frameCounts has passed.
+```
+  textAlign(CENTER);
+  color blue = color(53, 122, 161);
+
+  if (frameCount-start_fc<7) {
+    if (score_change==10) {
+      fill(blue);
+      text("YAYYY +10!", width/2, 720);
+    } else if (score_change==5) {
+      fill(blue);
+      text("+5!", width/2, 720);
+    } else if (score_change==-10) {
+      color orange = color(224, 121, 70);
+      fill(orange);
+      text("Don't kill the flower :( -10!", width/2, 720);
+    }
+  }
+};
 ```
