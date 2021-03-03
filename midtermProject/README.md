@@ -21,14 +21,14 @@ Simply, you win by reaching 100 points. You lose if the score reaches -30!
 
 ### How Does It Look Like
 If you start running the program, you will be able to see the start screen with two buttons: instruction and start.
-Just click the instruction button to see the instruction or click the start button to start the game.
+Just click the instruction button to see the instruction or click the start button to start the game.<br>
 
 <p align="center">
   <img src="btn.gif" width="500" height="500">
   <img src="start.gif" width="500" height="500">
 </p>
 
-Once you start the game, the hammer will follow your mouse and you will be able to hit the moles or flowers by clicking them with a hammer.
+Once you start the game, the hammer will follow your mouse and you will be able to hit the moles or flowers by clicking them with a hammer.<br>
 <p align="center">
   If you hit the mole with a hat: <br>
   <img src="hit_molehat.gif" width="500" height="500"><br><br>
@@ -37,3 +37,14 @@ Once you start the game, the hammer will follow your mouse and you will be able 
   If you hit the flower: <br>
   <img src="hit_flower.gif" width="500" height="500"><br><br>
 </p>
+
+If you reach -30 points by hitting the flower repeatedly, you will lose the game and the game will stop. The endscreen will be displayed, on which you can click the buttons to restart the game or quit.<br>
+<p align="center">
+  <img src="game_lose.gif" width="500" height="500">
+</p>
+
+If you earn 100 points by hitting the flower repeatedly, you will win the game and the game will stop. The endscreen will be displayed, on which you can click the buttons to restart the game or quit. On the endscreen, the time taken for you to reach 100 points will be shown, along with the best score.<br>
+<p align="center">
+  <img src="game_win.gif" width="500" height="500">
+</p>
+
