@@ -19,3 +19,10 @@ Simply, you win by reaching 100 points. You lose if the score reaches -30!
   <img src="img/instruction.png" width="500" height="500">
 </p>
 
+### How Does It Look Like
+If you start running the program, you will be able to see the start screen with two buttons: instruction and start.
+Just click the instruction button to see the instruction or click the start button to start the game.
+
+<p align="center">
+  <img src="btn.gif" width="500" height="500">
+</p>
