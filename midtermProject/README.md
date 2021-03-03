@@ -27,3 +27,13 @@ Just click the instruction button to see the instruction or click the start butt
   <img src="btn.gif" width="500" height="500">
   <img src="start.gif" width="500" height="500">
 </p>
+
+Once you start the game, the hammer will follow your mouse and you will be able to hit the moles or flowers by clicking them with a hammer.
+<p align="center">
+  If you hit the mole with a hat: <br>
+  <img src="btn.gif" width="500" height="500">
+  If you hit the mole without a hat: <br>
+  <img src="start.gif" width="500" height="500">
+  If you hit the flower: <br>
+  <img src="start.gif" width="500" height="500">
+</p>
