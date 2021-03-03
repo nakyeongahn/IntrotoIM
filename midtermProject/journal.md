@@ -291,3 +291,28 @@ Then, I built another void function called notification() to display the text un
   }
 };
 ```
+### March 2, 2021 : Add a Timer and Sounds ###
+To make game more interesting, I added a timer which counts how many seconds it took for a user to reach 100 points. If the time spent is the shortest, it becomes the best score. At first, I tried to use the frameCount and convert it to seconds. However, it didn't reallt work out. The seconds were timed at a faster rate or wasn't being counted at all. Therefore, I searched up in the google to find the function called millis(). I first stored the start time of the game and subtracted it from the end time of the game. Since the unit was milliseconds, I also converted the value into seconds. At the end of the game, it compares the time taken with the best score and updates the best record.
+
+```
+start_sec=millis();
+if (score>=100){
+sec=(millis()-start_sec)/1000;
+};
+```
+I also added the sound by downloading the mp3 files from the Epidemic Sound webstie (https://www.epidemicsound.com/sound-effects/). I added one background sound to make it play all the time and two sound effects when the hammer hits the mole and the flower.
+
+```
+import processing.sound.*; //import Sound library
+SoundFile aud_bg;
+SoundFile aud_mole;
+SoundFile aud_flower;
+
+aud_bg = new SoundFile(this, "audio/bg.mp3"); //load audio files needed
+aud_mole = new SoundFile(this, "audio/mole.mp3");
+aud_flower = new SoundFile(this, "audio/flower.mp3");
+
+if (aud_bg.isPlaying()==false) { //keep playing background music
+  aud_bg.play();
+}
+```
