@@ -316,3 +316,14 @@ if (aud_bg.isPlaying()==false) { //keep playing background music
   aud_bg.play();
 }
 ```
+This is a final result:
+1) lose
+<p align="center">
+  <img src="game_lose.gif" width="500" height="500">
+</p>
+
+2) win
+<p align="center">
+  <img src="game_win.gif" width="500" height="500">
+</p>
+
