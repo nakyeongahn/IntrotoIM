@@ -6,11 +6,11 @@ I decided to create this game since I had good memories playing whack-a-mole wit
 
 <p align="center">
   This is how the whack-a-mole game machine looks like: <br>
-  <img src="memories.png" width="500" height="500">
+  <img src="memories.jpg" width="400" height="400">
 </p>
 
+### Instruction
 <p align="center">
-  Below is the picture of detailed instructions:
   <img src="img/instruction.png" width="500" height="500">
 </p>
 
