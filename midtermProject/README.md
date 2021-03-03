@@ -25,4 +25,5 @@ Just click the instruction button to see the instruction or click the start butt
 
 <p align="center">
   <img src="btn.gif" width="500" height="500">
+  <img src="start.gif" width="500" height="500">
 </p>
