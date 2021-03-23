@@ -13,7 +13,7 @@ HINT:
 ### Circuit
 <p align="center">
   This is how my scheme looks like: <br>
-  <img src="circuit.png" width="600" height="400"><br>
+  <img src="circuit.png" width="800" height="600"><br>
   This is how my board looks like: <br>
   <img src="board.jpg" width="400" height="400"><br>
 </p>
