@@ -55,3 +55,12 @@ HINT:
   <p align="center">
   <img src="red.gif" width="600" height="400"><br>
   </p>
+
+
+### CODE
+
+
+### Difficulties
+I was not really familiar with the whole concept of circuit and how to build it, so it took quite a bit of time to build the circuit with 4 switches and 4 LED lights.The wire part of resistor and LED lights are so sharp and I hurt my hands:( <br>
+For the programming part, everything was pretty smooth except that there were new functions or methods I wasn't really familiar with.
+
