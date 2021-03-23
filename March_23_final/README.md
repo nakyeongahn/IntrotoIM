@@ -81,7 +81,7 @@ boolean b_on = false;
 In the loop(), I used a lot of if conditions to check if the switch was pushed and make the following responses by the LED lights.
 
 ### Difficulties
-I was not really familiar with the whole concept of circuit and how to build it, so it took quite a bit of time to build the circuit with 4 switches and 4 LED lights.The wire part of resistor and LED lights are so sharp and I hurt my hands:( <br><br>
+I was not really familiar with the whole concept of circuit and how to build it, so it took quite a bit of time to build the circuit with 4 switches and 4 LED lights.The wire part of resistor and LED lights are so sharp and I hurt my hands:( Also, I had accidentally pulled one wire, which made me build the whole circuit again. <br><br>
 
 For the programming part, everything was pretty smooth except that there were new functions or methods I wasn't really familiar with.
 The hardest part for programming was when turning on the green LED. Red and green switches should be pushed consecutively, regardless of order, so I had to calculate various cases and control them by giving them conditions.
