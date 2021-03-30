@@ -9,18 +9,18 @@ the eye will be closed (blue lights) will be turned off and blushes will also ge
 While you push the yellow switch, 
 the eye will open up (blue lights) will be turned on strongly and blushes will also get stronger.
 
-Materials Used:
-2 Blue LEDs
-2 Red LEDs
-2 Swithces
-Photosensor
+Materials Used:<br>
+2 Blue LEDs<br>
+2 Red LEDs<br>
+2 Swithces<br>
+Photosensor<br>
 
 ### Circuit
 <p align="center">
   This is how my scheme looks like: <br>
-  <img src="circuit.png" width="800" height="600"><br>
+  <img src="schematic.jpg" width="800" height="600"><br>
   This is how my board looks like: <br>
-  <img src="board.jpg" width="400" height="400"><br>
+  <img src="circuit.png" width="400" height="600"><br>
 </p>
 
 ### How to Play/Answers
