@@ -112,3 +112,4 @@ I wanted to make the motion more sophisticated with fading when the switch is pu
 
 I also wanted to get cheeks fading when the switch is pushed; however, the program is keep updating the value from the sensor. It was not easy to control the value from the sensor.
 
+I wanted to make more drastic changes in the intensity of red light; however, the light could only range from 0 to 255.
