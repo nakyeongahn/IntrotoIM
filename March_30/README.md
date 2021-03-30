@@ -13,6 +13,8 @@ the eye will be closed (blue lights) will be turned off and blushes will also ge
 While you push the yellow switch, 
 the eye will open up (blue lights) will be turned on strongly and blushes will also get stronger.
 
+The link to the video of this work: https://youtu.be/C05GPAjhsCI
+
 Materials Used:<br>
 2 Blue LEDs<br>
 2 Red LEDs<br>
@@ -106,29 +108,7 @@ else { //if no switch is pushed, blinking motion
 ```
 
 ### Difficulties
-I was not really familiar with the whole concept of circuit and how to build it, so it took quite a bit of time to build the circuit with 4 switches and 4 LED lights.The wire part of resistor and LED lights are so sharp and I hurt my hands:( Also, I had accidentally pulled one wire, which made me build the whole circuit again. <br><br>
+I wanted to make the motion more sophisticated with fading when the switch is pushed, but I think it is not possible to use one led as both digital and analog output. I tried to do that but it didn't work. 
 
-For the programming part, everything was pretty smooth except that there were new functions or methods I wasn't really familiar with.
-The hardest part for programming was when turning on the green LED. Red and green switches should be pushed consecutively, regardless of order, so I had to calculate various cases and control them by giving them conditions.
-
-```
-if (g_chance_by_y == true) { //check if chances for a green light are on by a yellow light
-      if (g_read == HIGH) { //if a blue lights is turned on (g_btn turns on blue)
-        g_on = true; //turn on green (yellow + blue)
-        digitalWrite(g_led, HIGH);
-      }
-      if (r_read == HIGH or b_read == HIGH or y_read == HIGH) { //if any other switches are pushed 
-        g_chance_by_y = false; //chance is gone again
-      }
-    }
-    if (g_chance_by_b == true) { //check if chances for a green light are on by a blue light
-      if (r_read == HIGH) { //if a yellow light is turned on (r_btn turns on yellow)
-        g_on = true; //turn on green (blue + yello)
-        digitalWrite(g_led, HIGH);
-      }
-      if (g_read == HIGH or b_read == HIGH or y_read == HIGH) { //if any other switches are pushed
-        g_chance_by_y = false; //chance is gone againe
-      }
-    }
-```
+I also wanted to get cheeks fading when the switch is pushed; however, the program is keep updating the value from the sensor. It was not easy to control the value from the sensor.
 
