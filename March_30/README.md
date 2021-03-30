@@ -52,25 +52,58 @@ Photosensor<br>
 ### Code
 I first made const int variables for following numbers for switches and LED lights.
 ```
-const int r_led = 13; //variables for led lights
-const int b_led = 11;
-const int y_led = 9;
-const int g_led = 7;
-
-const int r_btn = A0; //variables for switches
-const int b_btn = A1;
-const int y_btn = A2;
-const int g_btn = A5;
+const int led1 = 5; //variables for blue lights
+const int led2 = 3;
+const int LDRPIN = A2; //variable for photosensor
+const int btn1 = A4; //variables for switches
+const int btn2 = A5;
+const int led3 = 11; //variables for red lights
+const int led4 = 9;
 ```
 
-Since my game is to turn on all lights permanently, I also added boolean variables to check if each light is on.
+The intensity of light from photosensor and the voltage from switch is read from following lines.
 ```
-boolean y_on = false; //check if each led light is turned on
-boolean g_on = false;
-boolean r_on = false;
-boolean b_on = false;
+int sensorValue = analogRead(LDRPIN); //read from photosensor
+int btnread1 = digitalRead(btn1); //read from switches
+int btnread2 = digitalRead(btn2);
 ```
-In the loop(), I used a lot of if conditions to check if the switch was pushed and make the following responses by the LED lights.
+If the blue switch is pushed, the motions are controlled by following lines.
+```
+if (btnread1 == HIGH) { //if blue switch is pushed
+    digitalWrite(led1, LOW); //turn off blue lights
+    digitalWrite(led2, LOW);
+    analogWrite(led3, 5); //make red lights dimmer
+    analogWrite(led4, 5);
+    delay(30);
+}
+```
+
+If the yellow switch is pushed, the motions are controlled by following lines.
+```
+else if (btnread2 == HIGH) { //if yellow switch is pushed
+    digitalWrite(led1, HIGH); //turn on red blue lights
+    digitalWrite(led2, HIGH);
+    analogWrite(led3, 255); //make red lights stronger
+    analogWrite(led4, 255); 
+    delay(30);
+}
+```
+When no switch is being pushed, the motions are controlled by following lines.
+```
+else { //if no switch is pushed, blinking motion
+    digitalWrite(led1, HIGH); //turn on
+    digitalWrite(led2, HIGH);
+    delay(v); //spped of delay is influenced by the intensity of light
+
+    digitalWrite(led1, LOW); //turn off
+    digitalWrite(led2, LOW);
+    delay(v); //delay
+
+    analogWrite(led3, brightness); //brightness of red lights is influenced by the intensity of light
+    analogWrite(led4, brightness);
+    delay(20);
+}
+```
 
 ### Difficulties
 I was not really familiar with the whole concept of circuit and how to build it, so it took quite a bit of time to build the circuit with 4 switches and 4 LED lights.The wire part of resistor and LED lights are so sharp and I hurt my hands:( Also, I had accidentally pulled one wire, which made me build the whole circuit again. <br><br>
