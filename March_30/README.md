@@ -1,5 +1,9 @@
 # Arduino Assignment 2: Blinks and Blushes
 
+I wanted to express how our eyes and cheeks response under different intensity of light.
+
+Based on the intensity of light the photosensor captures, the speed of the eye blinking motion and the redness of blush changes. The stronger lights will make eyes blink faster and stronger red the blush will be, as humans are under the strong lights.
+
 As photosensor captures the stronger light, 
 the eyes (blue lights) will blink faster and cheeks will get blush in a stronger red lights.
 
@@ -20,47 +24,30 @@ Photosensor<br>
   This is how my scheme looks like: <br>
   <img src="schematic.jpg" width="800" height="600"><br>
   This is how my board looks like: <br>
-  <img src="circuit.png" width="400" height="600"><br>
+  <img src="circuit.png" width="500" height="600"><br>
 </p>
 
-### How to Play/Answers
-1. You can start playing this game by pushing any of the switches. <br>Then it will turn on all the lights and off three times. It shows you need to aim for turning all the lights.<br>
+### How to Play
+1. As programs are uploaded, the eyes will blink and cheeks will show the red light with intensity corresponding to the environment.
   <p align="center">
-  <img src="start.gif" width="600" height="400"><br>
+  <img src="normal.gif" width="400" height="600"><br>
   </p>
-2. Try pushing switches to find out which color of LED each switch turns on. <br>
+2. If I cover the photosensor with my finger, the sensor detects the light of less intensity <br>
   <p align="center">
-  <img src="trial1.gif" width="600" height="400"><br>
+  <img src="dark.gif" width="400" height="600"><br>
   </p>
-3. As yellow and blue mix up to green, you need to push switches that turn on yellow and blue lights. <br>Push red and green switches consecutively!
+3. If the board is placed under the strong light, the blue lights will blink faster and cheeks will present a stronger red light. <br>
   <p align="center">
-  <img src="green.gif" width="600" height="400"><br>
+  <img src="brighter.gif" width="400" height="600"><br>
   </p>
-4. After green turns on, try pushing switches to find out which color of LED each switch turns on. <br>
+4. While blue switch is pushed, the eyes will be closed, expressed as blue lights being turned off. And cheeks will also get dimmer. <br>
   <p align="center">
-  <img src="trial2.gif" width="600" height="400"><br>
+  <img src="blue_btn.gif" width="400" height="600"><br>
   </p>
-5. Whereas yellow and green turn on red and blue LED respectively, both red and blue switches turn on yellow LED. This gives a hint that yellow should be turned on next. <br>Try pushing switches that turn on yellow LED three times.
+5. While yellow switch is pushed, the eyes will be open, expressed as blue lights being turned on. And cheeks will also get brighter. <br>
   <p align="center">
-  <img src="yellow.gif" width="600" height="400"><br>
+  <img src="yellow_btn.gif" width="400" height="600"><br>
   </p>
-6. After yellow turns on, try pushing switches to find out which color of LED each switch turns on. <br>
-  <p align="center">
-  <img src="trial3.gif" width="600" height="400"><br>
-  </p>
-7. Only the green switch turns on blue and all other switches turn on red. This time it implies that blue should be turned on next. <br>Try pushing the green switch for three times to turn on blue LED.
-  <p align="center">
-  <img src="blue.gif" width="600" height="400"><br>
-  </p>
-8. After blue turns on, try pushing switches to find out which color of LED each switch turns on. <br>
-  <p align="center">
-  <img src="trial4.gif" width="600" height="400"><br>
-  </p>
-9. Blue and yellow switches turn on red LED whereas other two switches turn on no LED at all. It implies that red should be turned on next. <br> Try pushing switches that turn on red LED for three times.
-  <p align="center">
-  <img src="red.gif" width="600" height="400"><br>
-  </p>
-
 
 ### Code
 I first made const int variables for following numbers for switches and LED lights.
