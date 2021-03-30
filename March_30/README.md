@@ -32,7 +32,7 @@ Photosensor<br>
   <p align="center">
   <img src="normal.gif" width="400" height="600"><br>
   </p>
-2. If I cover the photosensor with my finger, the sensor detects the light of less intensity <br>
+2. If I cover the photosensor with my finger, the sensor detects the light of less intensity. The blinking motion will get slower and the blush will be dimmer. <br>
   <p align="center">
   <img src="dark.gif" width="400" height="600"><br>
   </p>
