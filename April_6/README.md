@@ -28,6 +28,5 @@ I tried to make a piano and the simple song I came up with is "Mary Little Lamb.
 1. I found the piano sheet for the song. 
 2. I drew the lamb that would be attached to the servo motor.
 <p align="center">
-  This is how my board looks like: <br>
-  <img src="lamb.jpg" width="200" height="200"><br>
+  <img src="lamb.jpg" width="250" height="200"><br>
 </p>
