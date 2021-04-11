@@ -21,3 +21,13 @@ Materials Used:<br>
   This is how my board looks like: <br>
   <img src="board.jpg" width="500" height="500"><br>
 </p>
+
+### Process
+I tried to make a piano and the simple song I came up with is "Mary Little Lamb." I chose this song as only three notes are needed to play this song and it is a famous children song.
+
+1. I found the piano sheet for the song. 
+2. I drew the lamb that would be attached to the servo motor.
+<p align="center">
+  This is how my board looks like: <br>
+  <img src="lamb.jpg" width="200" height="200"><br>
+</p>
