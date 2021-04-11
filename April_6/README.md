@@ -10,10 +10,13 @@ Materials Used:<br>
 1 Buzzer<br>
 1 Servo Motor<br>
 
-### Circuit
+### Schematic
 <p align="center">
   This is how my scheme looks like: <br>
   <img src="circuit.jpg" width="800" height="600"><br>
+</p>
+### Circuit
+<p align="center">
   This is how my board looks like: <br>
   <img src="board.jpg" width="500" height="500"><br>
 </p>
