@@ -96,3 +96,8 @@ void setup(){
       myservo.write(pos);
     }
 ```
+
+### Difficulties
+There was some weird sound played after the melody is played for once in the setup() and the switch wouldn't work. I found out that this is the problem of for loop. I set the condition longer that it should have been; after correcting the condition for for loop, the weird sound wasn't there any more.
+
+It is still kind of confusing to manipulate the moves of a servo motor accurately. I think I need more practice on that part.
