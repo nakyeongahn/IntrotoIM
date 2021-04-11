@@ -25,10 +25,17 @@ Materials Used:<br>
 ### Process
 I tried to make a piano and the simple song I came up with is "Mary Little Lamb." I chose this song as only three notes are needed to play this song and it is a famous children song.
 
-1. I found the piano sheet for the song. <br><p align="center">
+1. I found the piano sheet for the song. <br>
+  <p align="center">
   <img src="notes.jpg" width="500" height="615"><br>
-</p>
+  </p>
+  The note is from here: https://www.letsplaykidsmusic.com/mary-had-a-little-lamb-easy-piano-music/
+  
 2. I drew the lamb that would be attached to the servo motor.
-<p align="center">
-  <img src="lamb.jpg" width="250" height="200"><br>
-</p>
+  <p align="center">
+    <img src="lamb.jpg" width="250" height="200"><br>
+  </p>
+3. I drew the circuit and built the board.
+
+### Code
+
