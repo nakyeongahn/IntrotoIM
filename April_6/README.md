@@ -15,6 +15,7 @@ Materials Used:<br>
   This is how my scheme looks like: <br>
   <img src="circuit.jpg" width="800" height="600"><br>
 </p>
+
 ### Circuit
 <p align="center">
   This is how my board looks like: <br>
