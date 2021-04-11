@@ -87,7 +87,7 @@ void setup(){
   }
 ```
 4. If one of any switches were pushed, servo motor will make a movement to move the lamb.
- ```
+```
  if (E_read == HIGH || D_read == HIGH || C_read == HIGH) {
     for (pos = 0; pos <= 180; pos += 1) {
       myservo.write(pos);
@@ -95,4 +95,4 @@ void setup(){
     for (pos = 180; pos >= 0; pos -= 1) {
       myservo.write(pos);
     }
-    ```
+```
