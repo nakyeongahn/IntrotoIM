@@ -29,7 +29,7 @@ I tried to make a piano and the simple song I came up with is "Mary Little Lamb.
   <p align="center">
   <img src="notes.jpg" width="500" height="615"><br>
   </p>
-  The note is from here: https://www.letsplaykidsmusic.com/mary-had-a-little-lamb-easy-piano-music/
+  The note is from here: https://www.letsplaykidsmusic.com/mary-had-a-little-lamb-easy-piano-music/ <br>
   
 2. I drew the lamb that would be attached to the servo motor.
   <p align="center">
