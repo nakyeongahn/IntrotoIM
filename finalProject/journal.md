@@ -15,3 +15,5 @@ Yes, the game that pops up on a Chrome window when you have problems with your i
 3. Every time the player gains points, the LED light will be turned on.
 4. A buzzer can be added to the board to play the sounds when the score is gained. (Maybe processing itself can play more sophisticated sounds)
 5. Photosensor can be used to change the brightness of the background of the game.
+
+### Possible Images That Can Be Used
