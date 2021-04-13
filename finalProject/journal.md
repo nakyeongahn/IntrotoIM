@@ -17,3 +17,13 @@ Yes, the game that pops up on a Chrome window when you have problems with your i
 5. Photosensor can be used to change the brightness of the background of the game.
 
 ### Possible Images That Can Be Used
+
+<p align="center">
+  Different Images for T-rex for Animation
+  <img src="t-rex.png" width="500" height="250"><br>
+</p>
+
+<p align="center">
+  Different Images for Cactus (Obstacles)
+  <img src="cactus.png" width="500" height="250"><br>
+</p>
