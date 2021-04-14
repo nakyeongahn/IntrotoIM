@@ -35,19 +35,14 @@ Materials Used:<br>
 </p>
 
 ### Process
-I tried to make a piano and the simple song I came up with is "Mary Little Lamb." I chose this song as only three notes are needed to play this song and it is a famous children song.
-
-1. I found the piano sheet for the song. <br>
-  <p align="center">
-  <img src="notes.jpg" width="500" height="615"><br>
-  The note is from here: https://www.letsplaykidsmusic.com/mary-had-a-little-lamb-easy-piano-music/ <br>
-  </p>
-    
-2. I drew the lamb that would be attached to the servo motor.
-  <p align="center">
-    <img src="lamb.jpg" width="250" height="200"><br>
-  </p>
-3. I drew the circuit and built the board.
+1. I first started looking for images that I can use for this game.
+<p align="center">
+  <img src="pot.png" width="150" height="150">
+  <img src="flower.png" width="150" height="150">
+  <img src="raindrop.png" width="150" height="150">
+  <img src="bug.png" width="150" height="150">
+  <img src="sun.png" width="150" height="150">
+</p>
 
 ### Code
 1. I first start working on the processing to make basic classes and functions. I built classes for the plant, food(raindrops or an insect), and the sun. Each class has the functions for displaying the image and updating its movments. For the functions that don't belong to the classes, there are bg() which draws windows in the background.
