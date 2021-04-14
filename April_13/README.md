@@ -166,4 +166,7 @@ void serialEvent(Serial myPort) {
   <img src="decrease.gif" width="600" height="600"><br>
 </p>
 
-### Difficulties
+### Challenges
+It was a bit hard for me to recall the things that I used for Processing, so I spent some time trying to remembering how I used Processing. Since I wanted to make my codes look organized, I put some effort in trying to restructure my codes and rearrange them. 
+
+For the coding part, I fo found it relatively easy to build the game and to get the values from the sensor and using it for the Processing project.
