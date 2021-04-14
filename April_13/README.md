@@ -44,6 +44,8 @@ Materials Used:<br>
   <img src="sun.png" width="150" height="150">
 </p>
 
+2.  With the basic concept in mind, I started working on the codes.
+
 ### Code
 1. I first start working on the processing to make basic classes and functions. I built classes for the plant, food(raindrops or an insect), and the sun. Each class has the functions for displaying the image and updating its movments. For the functions that don't belong to the classes, there are bg() which draws windows in the background.
 
@@ -152,15 +154,15 @@ void serialEvent(Serial myPort) {
 ```
 ### How It Looks Like
 <p align="center">
-  When the brightness of the screen changes depending the light captured by the photosensor <br>
+  When the brightness of the screen changes depending the light captured by the photosensor <br><br>
   <img src="brightness.gif" width="600" height="600"><br>
 </p>
 <p align="center">
-  When the flower captures raindrops, the height increases <br>
+  When the flower captures raindrops, the height increases <br><br>
   <img src="increase.gif" width="600" height="600"><br>
 </p>
 <p align="center">
-  When the flower captures the insect, the height decreases <br>
+  When the flower captures the insect, the height decreases <br><br>
   <img src="decrease.gif" width="600" height="600"><br>
 </p>
 
