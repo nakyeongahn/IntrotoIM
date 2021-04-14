@@ -10,7 +10,7 @@ THe brightness of the flower will be determined by the photosensor of the arduin
 * If the height of the flower becomes negligible, you die!*
 * If the height of the flower is over 200, you win!*
 
-The link to the video of this work:
+The link to the video of this work: https://youtu.be/3aOH79AmYu4
 
 Materials Used:<br>
 2 Switches<br>
