@@ -27,3 +27,10 @@ Yes, the game that pops up on a Google page when you have problems with your int
   Different Images for Cactus (Obstacles)<br>
   <img src="cactus.png" width="300" height="100"><br><br>
 </p>
+
+### April 14
+I tried to come up with the scheme. I am not sure how to draw an ultrasonic sensor in the schematic (needs update). 
+<p align="center">
+  This is the scheme I planned so far.<br>
+  <img src="scheme1.jpg" width="600" height="500"><br><br>
+</p>
