@@ -39,6 +39,7 @@ I tried to come up with the scheme. I am not sure how to draw an ultrasonic sens
 I started making processing file first to create basic logistics for t-rex game.
 I first started with displaying the ground and t-rex.
 
+```
 class Ground{
   float posX = width;
   float posY = height - floor(random(groundHeight - 20, groundHeight + 30));
@@ -57,6 +58,7 @@ class Ground{
     posX -= speed;
   }
 }
+```
 
 I want to make prettier background for the game. I will bring more ideas later.
 
