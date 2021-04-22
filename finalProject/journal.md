@@ -34,3 +34,35 @@ I tried to come up with the scheme. I am not sure how to draw an ultrasonic sens
   This is the scheme I planned so far.<br>
   <img src="scheme1.jpg" width="600" height="500"><br><br>
 </p>
+
+### April 16
+I started making processing file first to create basic logistics for t-rex game.
+I first started with displaying the ground and t-rex.
+
+class Ground{
+  float posX = width;
+  float posY = height - floor(random(groundHeight - 20, groundHeight + 30));
+  int w = floor(random(1, 10));
+  
+  Ground(){
+  }
+  
+  void show(){
+    stroke(0);
+    strokeWeight(3);
+    line(posX, posY, posX + w, posY);
+  }
+  
+  void move(float speed){
+    posX -= speed;
+  }
+}
+
+I want to make prettier background for the game. I will bring more ideas later.
+
+### April 21
+I completed the prcessing version of the game.
+<p align="center">
+  This is the scheme I planned so far.<br>
+  <img src="vid.gif" width="600" height="500"><br><br>
+</p>
