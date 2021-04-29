@@ -79,13 +79,13 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 </p>
 
 ### CODE
-1. Arduino
-  1) When it receives signal from the processing, it starts working. Otherwise, the speed of the wheel is set as 0.
-  2) Three functions are made: moveForward(), moveBackward(), movePattern(). movePattern() is to move the device accordingly when the obstacle is spotted. If the obstacle is at left, turn right. Otherwise, turn left.
-  3) Servomotor is rotating by rewriting the angle. The angle changes by 10 degree.
+1. Arduino<br>
+  i) When it receives signal from the processing, it starts working. Otherwise, the speed of the wheel is set as 0.<br>
+  ii) Three functions are made: moveForward(), moveBackward(), movePattern(). movePattern() is to move the device accordingly when the obstacle is spotted. If the obstacle is at left, turn right. Otherwise, turn left.<br>
+  iii) Servomotor is rotating by rewriting the angle. The angle changes by 10 degree.<br>
 
 2. Processing
-  1) 
+  i) 
 
 ### Major Problems and Modifications
 1. When I first created class for hammer, I loaded the image everytime the function was called to display the hammer according to the score. However, using loadImage() everytime when displaying hammer made the response of image to the movement of cursor very slow. The image followed the cursore, but it was lagging. <br><br>So, what I did was to remove the class for hammer as I only needed mouseX, mouseY for the hammer, and changed the way to load image for hammer. Instead of checking score everytime the draw() function is called, I made a condition to load new image for hammer when the current score % 20 = 0 or 5. It means that the score just went over 20, 40, 60, or 80. And these are the only times to change the speed or image of the hammer. After making modifications, the lagging time decreased and now the hammer follows the cursor pretty quickly! <br><br>
