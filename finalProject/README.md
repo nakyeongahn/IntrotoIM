@@ -46,22 +46,15 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 </p>
 
 ### How Does Arduino and Processing Interact / How It Works
-1. If you start running the program, you will be able to see the start screen with two buttons: instruction and start.
-Just click the instruction button to see the instruction or click the start button to start the game.<br>
+1. After uploading .ino file to the Arduino board, play the processing file. Then the start screen will display.<br>
 
 <p align="center">
-  <img src="btn.gif" width="500" height="500">
-  <img src="start.gif" width="500" height="500">
+  <img src="start.png" width="500" height="500">
 </p>
 
-2. Once you start the game, the moles and flower will randomly appear among 9 holes. There are total 5 different types of moles and 1 type of flower. The images will be randomly chosen. <br>
+2. If you click the button "Instructions," the new screen will show you the components of the device. <br>
   <p align="center">
-  <img src="img/mole1.png" width="100" height="150">
-  <img src="img/mole2.png" width="100" height="150">
-  <img src="img/mole3.png" width="100" height="150">
-  <img src="img/mole4.png" width="100" height="150">
-  <img src="img/mole5.png" width="100" height="150"><br>
-  <img src="img/mole6.png" width="100" height="150">
+<img src="menu.png" width="500" height="500">
 </p>
 
 3. The hammer will follow your mouse and you will be able to hit the moles or flowers by clicking them with a hammer. If you click the objects, the score will be updated according to what you clicked.<br>
