@@ -21,8 +21,6 @@ I built the first version of RC car with cardboard boxes. It failed because the 
 ### April 22
 I built the second version of the car with the acrylic plate. Now, it is much more stable. Placing the ultrasonic sensor on top of the servo motor was the most tricky part. I ended up using glue gun to first fix the cardboard box plate with the servomotor. And then placed ultrasonic sensor using tapes and glue gum. Because of the weight of the ultrasonic sensor, the sensor kept facing down. So I added some paper to keep the balance.
 
-
-
-
-### April 27
+### April 23
+Wrote codes for arduino part. 
 ### April 27
