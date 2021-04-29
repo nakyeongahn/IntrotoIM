@@ -167,4 +167,8 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 ```
 
 ### Major Problems and Modifications
-1. 
+1. When I first made the RC car, I used the cardboard box to support motors and sensors. However, it was very unstable and the sensors weren't able to be fixed in the place. So, I used a acrylic plate to build the device.<br>
+2. Keeping the balance of the ultrasonic sensor on top of the servomotor was the hardest part of the project. Since the ultrasonic sensor quite heavier than the surface that servomotor provides, the ultrasonic sensor would collapse. So I used additional glue and cardboard box to fix the ultrasonic sensor with stability.<br>
+3. I first set the rotation angle of the servo motor from 20 to 160 degree. However, the sensor then kept detecting the wires at connected to the board. So I reduced the range of rotation from 40 to 140, which worked better.<br>
+4. Sending the variable to the board and processing those values from .pde file was tricky. As it keeps receiving the values from the board constantly, the variable was reset every time it receives the information. Therefore, the changes weren't shown on the screen or it disappeared to quickly. So, I made a separate variable to receive those values and store them. And it worked! Moreover, I used millis() to display the text for longer time period (than 1 framecount).<br>
+5. There is a lag between how the car moves and what the screen displays. This happens partly because I want to display those changes for longer time so that it is visible to users. This lag between two programs should be improved. <br>
