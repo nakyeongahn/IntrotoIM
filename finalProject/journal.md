@@ -140,3 +140,8 @@ I worked on the main screen to show whether the device is moving forward or chan
   This is how it looks like: <br>
   <img src="right.png" width="500" height="500">
 </p>
+
+### April 27
+I had hard time making proper interactions between arduino and processing. Depending on where I put the Serial.print() function in the arduino program, it was writing the wrong values. So I tried to put these lines every here and there and found the place it sends the proper value!
+
+Also, when the processing reads and store those values, it took some time for me to figure out why the changes in movements are not reflected on the screen. 
