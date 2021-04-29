@@ -82,12 +82,89 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 1. Arduino<br>
   i) When it receives signal from the processing, it starts working. Otherwise, the speed of the wheel is set as 0.<br>
   ii) Three functions are made: moveForward(), moveBackward(), movePattern(). movePattern() is to move the device accordingly when the obstacle is spotted. If the obstacle is at left, turn right. Otherwise, turn left.<br>
+  ```
+  void movePattern() { //if the car detects obstacles
+  moveBackward(); //move backward
+  delay(500);
+  if (angle >= 90) { //if the obstacle is at the right side, turn left
+    analogWrite(pwmAPin, 255);  
+    digitalWrite(ain1Pin, HIGH);
+    digitalWrite(ain2Pin, LOW);
+
+    analogWrite(pwmBPin, 255);
+    digitalWrite(bin1Pin, LOW);
+    digitalWrite(bin2Pin, HIGH);
+
+    right = 1;
+    left = 0;
+
+    delay(500);
+  }
+  else {
+    analogWrite(pwmAPin, 255); //if the obstacle is at the left side, turn left
+    digitalWrite(ain1Pin, LOW);
+    digitalWrite(ain2Pin, HIGH);
+
+    analogWrite(pwmBPin, 255);
+    digitalWrite(bin1Pin, HIGH);
+    digitalWrite(bin2Pin, LOW);
+
+    delay(500);
+
+    left = 1;
+    right = 0;
+  }
+
+  angle = 90; //change the direction the servo motor rotates
+  if (state = 10) {
+    state = -10;
+  } else if (state = -10){
+    state = 10;
+  }
+  myservo.write(angle);
+  delay(100);
+}
+```
   iii) Servomotor is rotating by rewriting the angle. The angle changes by 10 degree.<br>
+  ```
+  if (angle == 140) state = -10; //to make the servomotor rotate
+        else if (angle == 40) state = 10;
+        angle += state;
+        delay(100);
+  ```
 
 2. Processing
-  i) 
+  i) The start and instruction screen were made using texts, rectangle, and image for the broom. Separate functions were used to check if the buttons were pressed for each screen. <br>
+  ii) Based on the information written on the port, the main screen shows different texts according to the movement of the car. Also it sends information to the board to turn on/off the device.
+  ```
+  void serialEvent(Serial myPort) { //send information to arduino board
+  String s=myPort.readStringUntil('\n'); //read the string from the port
+  s=trim(s);
+  if (s!=null) {
+    println(s);
+    int values[]=int(split(s, ',')); //split the string read from the port
+    if (values.length==3) {
+      if (values [0] == 1) {
+        running = false;
+        if (values [1] == 1) {
+          left = 1;
+          right = 0;
+        }
+        if (values [2] == 1) {
+          right = 1;
+          left = 0;
+        }
+      }
+      if (values[0] == 0) {
+        running = true;
+        left = 0;
+        right = 0;
+      }
+    }
+  }
+  myPort.write(on+"\n"); //send the information to the board about "on" variable
+}
+```
 
 ### Major Problems and Modifications
-1. When I first created class for hammer, I loaded the image everytime the function was called to display the hammer according to the score. However, using loadImage() everytime when displaying hammer made the response of image to the movement of cursor very slow. The image followed the cursore, but it was lagging. <br><br>So, what I did was to remove the class for hammer as I only needed mouseX, mouseY for the hammer, and changed the way to load image for hammer. Instead of checking score everytime the draw() function is called, I made a condition to load new image for hammer when the current score % 20 = 0 or 5. It means that the score just went over 20, 40, 60, or 80. And these are the only times to change the speed or image of the hammer. After making modifications, the lagging time decreased and now the hammer follows the cursor pretty quickly! <br><br>
- 2. At first, I just planned to make the winning condition for earning 100 points. However, when I actually created the game, it seemed dull. So, I added a timer which counts seconds it took for the user to complete the game and compare it with the best record. When you run the program and play it for the first time there is no best record yet. However, after restarting the game, the best record will be stored and the users can now compare their speed with the best record while playing the game.<br><br>To make this possible I used millis() function. I first stored the start time using millis() to the variable and subtracted it from the millis() when the   game ended. I also converted the time unit from milliseconds to seconds, and the total time taken for game to be completed in seconds would be (millis()-start_sec)/1000.
-
+1. 
