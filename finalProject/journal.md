@@ -122,3 +122,21 @@ I also wored on the processing to make the first two screens. For the start scre
   This is how it looks like: <br>
   <img src="menu.png" width="500" height="500">
 </p>
+
+### April 26
+I worked on the main screen to show whether the device is moving forward or changing its direction due to obstacles. 
+1. When there is no obstacle
+<p align="center">
+  This is how it looks like: <br>
+  <img src="running.png" width="500" height="500">
+</p>
+2. When there is an obstacle at left
+<p align="center">
+  This is how it looks like: <br>
+  <img src="left.png" width="500" height="500">
+</p>
+3. When there is an obstacle at right
+<p align="center">
+  This is how it looks like: <br>
+  <img src="right.png" width="500" height="500">
+</p>
