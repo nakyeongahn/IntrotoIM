@@ -144,4 +144,6 @@ I worked on the main screen to show whether the device is moving forward or chan
 ### April 27
 I had hard time making proper interactions between arduino and processing. Depending on where I put the Serial.print() function in the arduino program, it was writing the wrong values. So I tried to put these lines every here and there and found the place it sends the proper value!
 
-Also, when the processing reads and store those values, it took some time for me to figure out why the changes in movements are not reflected on the screen. 
+Also, when the processing reads and store those values, it took some time for me to figure out why the changes in movements are not reflected on the screen. This was because the value is being updated every second the changes don't remain on the screen for longer time. I made one more variable for each of the value to process them easily.
+
+DONE!
