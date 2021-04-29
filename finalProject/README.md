@@ -32,7 +32,7 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 
 <p align="center">
   This is how the broom looks like befor cutting some part off: <br>
-  <img src="broom.jpg" width="400" height="400">
+  <img src="broom.jpeg" width="400" height="400">
 </p>
 
 <p align="center">
@@ -45,7 +45,7 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
   <img src="car3.jpg" width="600" height="400">
 </p>
 
-### How Does It Look Like
+### How Does Arduino and Processing Interact / How It Works
 1. If you start running the program, you will be able to see the start screen with two buttons: instruction and start.
 Just click the instruction button to see the instruction or click the start button to start the game.<br>
 
