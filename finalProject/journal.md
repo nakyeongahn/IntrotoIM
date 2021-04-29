@@ -21,6 +21,102 @@ I built the first version of RC car with cardboard boxes. It failed because the 
 ### April 22
 I built the second version of the car with the acrylic plate. Now, it is much more stable. Placing the ultrasonic sensor on top of the servo motor was the most tricky part. I ended up using glue gun to first fix the cardboard box plate with the servomotor. And then placed ultrasonic sensor using tapes and glue gum. Because of the weight of the ultrasonic sensor, the sensor kept facing down. So I added some paper to keep the balance.
 
+<p align="center">
+  This is how it looks like: <br>
+  <img src="sensor.jpg" width="600" height="400">
+</p>
+
 ### April 23
-Wrote codes for arduino part. 
-### April 27
+Wrote codes for arduino part. <br>
+Three main functions needed: moveForward(), moveBackward(), movePattern().
+
+1. moveForward()
+```
+void moveForward() {
+
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, HIGH);
+  digitalWrite(ain2Pin, LOW);
+
+  analogWrite(pwmBPin, 255);
+  digitalWrite(bin1Pin, HIGH);
+  digitalWrite(bin2Pin, LOW);
+
+}
+```
+2. moveBackward(): Reverse the HIGH/LOW pin order compared to the moveForward() function.
+```
+void moveBackward() { //this function codes for the car to move backward at full speed
+  back = 1;
+  analogWrite(pwmAPin, 255);
+  digitalWrite(ain1Pin, LOW);
+  digitalWrite(ain2Pin, HIGH);
+
+  analogWrite(pwmBPin, 255);
+  digitalWrite(bin1Pin, LOW);
+  digitalWrite(bin2Pin, HIGH);
+}
+```
+3. movePattern()
+```
+void movePattern() { //if the car detects obstacles
+  moveBackward(); //move backward
+  delay(500);
+  if (angle >= 90) { //if the obstacle is at the right side, turn left
+    analogWrite(pwmAPin, 255);  
+    digitalWrite(ain1Pin, HIGH);
+    digitalWrite(ain2Pin, LOW);
+
+    analogWrite(pwmBPin, 255);
+    digitalWrite(bin1Pin, LOW);
+    digitalWrite(bin2Pin, HIGH);
+
+    right = 1;
+    left = 0;
+
+    delay(500);
+  }
+  else {
+    analogWrite(pwmAPin, 255); //if the obstacle is at the left side, turn left
+    digitalWrite(ain1Pin, LOW);
+    digitalWrite(ain2Pin, HIGH);
+
+    analogWrite(pwmBPin, 255);
+    digitalWrite(bin1Pin, HIGH);
+    digitalWrite(bin2Pin, LOW);
+
+    delay(500);
+
+    left = 1;
+    right = 0;
+  }
+
+  angle = 90; //change the direction the servo motor rotates
+  if (state = 10) {
+    state = -10;
+  } else if (state = -10){
+    state = 10;
+  }
+  myservo.write(angle);
+  delay(100);
+}
+```
+### April 24
+The sensor keeps detecting obstacles even though there is nothing in front of it. I tried to organize wires behind it and it worked better. But, it needed more improvement. I decided to decrease the range of angle the servo motor rotates to make ultrasonic sensor not detect a bunch of wires at the side.
+```
+if (angle == 140) state = -10;
+        else if (angle == 40) state = 10;
+        angle += state;
+        delay(100);
+```
+
+I also wored on the processing to make the first two screens. For the start screen, I added instructions and exit buttons. For the instructions page, same buttons were made.
+
+1. Start Screen <br> <p align="center">
+  This is how it looks like: <br>
+  <img src="start.png" width="500" height="500">
+</p>
+2. Instructions Screen <br> <p align="center">
+  This is how it looks like: <br>
+  <img src="menu.png" width="500" height="500">
+</p>
