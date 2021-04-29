@@ -112,11 +112,13 @@ if (angle == 140) state = -10;
 
 I also wored on the processing to make the first two screens. For the start screen, I added instructions and exit buttons. For the instructions page, same buttons were made.
 
-1. Start Screen <br> <p align="center">
+1. Start Screen <br> 
+<p align="center">
   This is how it looks like: <br>
   <img src="start.png" width="500" height="500">
 </p>
-2. Instructions Screen <br> <p align="center">
+2. Instructions Screen <br> 
+  <p align="center">
   This is how it looks like: <br>
   <img src="menu.png" width="500" height="500">
 </p>
