@@ -57,34 +57,25 @@ First, I made a normal RC car with an ultrasonic sensor and a servo motor. And I
 <img src="menu.png" width="500" height="500">
 </p>
 
-3. The hammer will follow your mouse and you will be able to hit the moles or flowers by clicking them with a hammer. If you click the objects, the score will be updated according to what you clicked.<br>
+3. Click the start button, then the screen will change and also the device will start moving forward. If the ultrasonic sensor does not detect obstacle within 15 cm, the following screen will be shown. <br>
 <p align="center">
-  If you hit the mole with a hat: <br>
-  <img src="hit_molehat.gif" width="500" height="500"><br><br>
-  If you hit the mole without a hat: <br>
-  <img src="hit_mole.gif" width="500" height="500"><br><br>
-  If you hit the flower: <br>
-  <img src="hit_flower.gif" width="500" height="500"><br><br>
+<img src="running.png" width="500" height="500">
 </p>
   
-3. The game will get faster as you earn more points. Every 20 points you earned, the mole will move upward faster, and also the color of the hammer changes.
+3. If the obstacle is detected from the left sight, the car will move backward and then turn right. The following screen will be shown.
 <p align="center">
-  <img src="img/hammer1.png" width="125" height="80">
-  <img src="img/hammer2.png" width="125" height="80">
-  <img src="img/hammer3.png" width="125" height="80">
-  <img src="img/hammer4.png" width="125" height="80">
-  <img src="img/hammer5.png" width="125" height="80">
+<img src="left.png" width="500" height="500">
 </p>
 
 
-4. If you reach -30 points by hitting the flower repeatedly, you will lose the game and the game will stop. The endscreen will be displayed, on which you can click the buttons to restart the game or quit.<br>
+4. If the obstacle is detected from the right sight, the car will move backward and then turn left. The following screen will be shown.
 <p align="center">
-  <img src="game_lose.gif" width="500" height="500">
+<img src="right.png" width="500" height="500">
 </p>
 
-If you earn 100 points by hitting the flower repeatedly, you will win the game and the game will stop. The endscreen will be displayed, on which you can click the buttons to restart the game or quit. On the endscreen, the time taken for you to reach 100 points will be shown, along with the best score.<br>
+5. If you click the button on the top right "pause," the car will pause its movments and the following screen will be shown. <br>
 <p align="center">
-  <img src="game_win.gif" width="500" height="500">
+<img src="pause.png" width="500" height="500">
 </p>
 
 ### Major Problems and Modifications
